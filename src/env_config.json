@@ -1,0 +1,11 @@
+{
+    "default": {
+        "hosts": [""],
+        "google_client_id": "412165675263-mmosnho58uam1966c6hrthhbfvvat0i1.apps.googleusercontent.com"
+    },
+
+    "local": {
+        "hosts": ["localhost"],
+        "google_client_id": "504590299276-g0dg39ljfgp9qm7gr6u0p8tvfpd5e3g6.apps.googleusercontent.com"
+    }
+}
