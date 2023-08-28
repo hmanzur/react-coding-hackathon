@@ -29,11 +29,9 @@ jobs:
       - name: Install Deps 🤖
         run: npm ci 
 
-      # - name: Run tests 🤡
-      #  run: npm test
-      #  env:
-      #    CI: 1
-
+      - name: Run tests 🤡
+        run: npm test
+        
       - name: Compile App 🍷 (taking wine meantime)
         run: npm run build
 
