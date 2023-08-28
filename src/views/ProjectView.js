@@ -32,7 +32,7 @@ export default function ProjectItemSide(props) {
     };
 
     fetchData()
-  }, [reload])
+  }, [reload, projectId])
 
   if (isLoading) {
     return (<div>Loading...</div>)
