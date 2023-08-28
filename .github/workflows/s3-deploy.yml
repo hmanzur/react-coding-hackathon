@@ -9,15 +9,19 @@ on:
     branches:
       - master
 
+permissions:
+  id-token: write
+  contents: read
+
 jobs:
   s3-deploy: 
-    name: Compile React App 💻
+    name: Compile React App 🎬
     runs-on: ubuntu-latest
     steps:
       - name: Get Code 🛸
         uses: actions/checkout@v3
 
-      - name: Setup Node 
+      - name: Setup Node 💻
         uses: actions/setup-node@v3
         with:
           node-version: "16.x"
@@ -36,7 +40,7 @@ jobs:
       - name: Configure AWS 🌎
         uses: aws-actions/configure-aws-credentials@v3
         with:
-          aws-region: ${{ vars.AWS_REGION }}
+          # aws-region: ${{ vars.AWS_REGION }}
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key:  ${{ secrets.AWS_SECRET_ACCESS_KEY }}
 
